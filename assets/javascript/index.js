@@ -13,3 +13,4 @@ document.querySelectorAll(".modal").forEach((n) => {
         modal.classList.remove("active");
     });
 });
+//**************************************************************/
