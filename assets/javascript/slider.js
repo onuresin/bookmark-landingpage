@@ -14,4 +14,16 @@ document.addEventListener("DOMContentLoaded", function() {
     if (selectedContent) {
       selectedContent.style.display = "block";
     }
+
+    let selectedDiv = document.querySelector('.slider-links .title:nth-child(' + index + ')');
+    let allImages = document.querySelectorAll('.red-stck');
+    for (let j = 0; j < allImages.length; j++) {
+      allImages[j].style.display = "none";
   }
+
+  let selectedImage = selectedDiv.querySelector('.red-stck');
+  if (selectedImage) {
+    selectedImage.style.display = "block";
+}
+}
+
