@@ -12,12 +12,13 @@
 
 }
 body {
+    margin: 0 auto;
+    max-width: 377px;
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
     background-color: #fff;
 }
 .container {
-    width: 375px;
     margin: 0 auto;
 }
 .header {
@@ -386,3 +387,74 @@ body {
     transform: translateX(100%);
   }
 }
+/*EXTENSION SECTION END*/
+
+/*FAQ SECTION*/
+.faq-section {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 32px;
+  gap: 64px;
+  align-items: center;
+}
+.info-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  & h3 {
+    color: var(--DarkBlue);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px; /* 125% */
+    letter-spacing: -0.075px; 
+  }
+  & p {
+    text-align: center;
+    color: var(--DarkBlue);
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */ 
+  }
+}
+.accordion-section {
+  width: 313px;
+  padding-inline: 32px;
+}
+.acc-content {border-bottom: 1px solid var(--Gray);}
+.question {
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.question h4 {
+  color: var(--DarkBlue);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px; /* 213.333% */ 
+}
+.answer {
+  display: none;
+  padding: 10px;
+}
+.answer h5 {
+  color: var(--DarkBlue);
+  opacity: 0.75;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px; /* 200% */
+  letter-spacing: 0.141px; 
+}
+.question::after {
+  content: url('/assets/image/close-purple.svg'); /* Kapalıyken gösterilecek ikon */
+}
+
+.active .question::after {
+  content: url('/assets/image/open-red.svg'); /* Açıkken gösterilecek ikon */
+}
+/*FAQ SECTION END*/
+
+/* MAIL CHECK SECTION */
