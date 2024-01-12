@@ -21,11 +21,16 @@ body {
     margin: 0 auto;
 }
 .header {
-    width: 375px;
+    width: 100%;
     display: flex;
     align-items: end;
     justify-content: space-between;
     padding: 40px 32px 0 32px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* İsteğe bağlı olarak gölgelendirme ekleyebilirsiniz */
+    z-index: 1000; /* İsteğe bağlı olarak z-index değerini ayarlayabilirsiniz */
 }
 .header-links {
   display: none;
@@ -131,7 +136,7 @@ body {
  }
 /*HAMBURGER & MODAL MENU BİTİŞ*/
 
-/*MENAGER SECTION */
+/*MANAGER SECTION */
 .manager-section {
   display: flex;
   flex-direction: column;
@@ -199,5 +204,31 @@ body {
     line-height: 28px; /* 200% */
     letter-spacing: 0.25px; 
     white-space: nowrap;
+  }
+}
+/*MANAGER SECTION END*/
+
+/*FEATURES SECTION*/
+.features-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  padding-inline: 32px;
+  & h4 {
+    text-align: center;
+    color: var(--DarkBlue);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 52px; /* 216.667% */
+    letter-spacing: -0.075px; 
+  }
+  & p {
+    color: var(--DarkBlue);
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+    opacity: 0.5;
   }
 }
