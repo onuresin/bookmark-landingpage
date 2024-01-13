@@ -950,7 +950,48 @@ body {
   letter-spacing: 0.15px; 
 }
 /*FAQ SECTION RESPONSIVE END*/
+/*MAILCHECK SECTION RESPONSIVE*/
+.check-top {
+  width: 423px;
+  margin: 0 auto;
+  gap:24px;
+  & h5 {
+    text-align: center;
+    font-size: 16px;
+  }
+  & h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px; /* 125% */
+    letter-spacing: -0.1px; 
+  }
+}
+.check-bottom {
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 16px;
+}
+.mail-put {
+  width: 311px;
+}
+.mail-btn {
+  padding: 10px 24px;
+}
+.mail-btn:hover {
+  box-shadow: linear-gradient(var(--y), #121721, #242A45, #5964e0);
+  background-color: #fff;
+  border: 1px solid var(--WarmRed);
+  transition:ease-out 2.5;
+  color: var(--WarmRed);
 
+}
+
+.mail-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #121721;
+}
+/*MAILCHECK SECTION RESPONSIVE END*/
 }
 
 
