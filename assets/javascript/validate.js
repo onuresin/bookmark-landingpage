@@ -11,7 +11,7 @@
 
     if (emailPattern.test(emailInput.value)) {
         errorMessage.style.display = 'none';
-        alert('Kaydınız başarılı, artık haberler ve güncellemelerimizi görebileceksiniz!');
+        alert('Kaydınız başarılı, artık haberlerimizi ve güncellemelerimizi görebileceksiniz!');
         emailborder.style.border = '2px solid transparent';
         errorIcon.style.display = 'none';
 

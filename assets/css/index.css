@@ -591,7 +591,7 @@ body {
     letter-spacing: 1.731px; 
   }
 }
-.foot-bot {
+.mobiles-logos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -599,6 +599,9 @@ body {
   & img {
     width: 28px;
   }
+}
+.web-foot {
+  display: none;
 }
 /*footer end*/
 
@@ -978,20 +981,54 @@ body {
 .mail-btn {
   padding: 10px 24px;
 }
+#emailInput {
+  cursor: url(/assets/image/Pointer.svg), auto;
+}
 .mail-btn:hover {
   box-shadow: linear-gradient(var(--y), #121721, #242A45, #5964e0);
   background-color: #fff;
   border: 1px solid var(--WarmRed);
   transition:ease-out 2.5;
   color: var(--WarmRed);
+  cursor: url(/assets/image/Pointer.svg), auto;
 
 }
-
 .mail-btn:active {
   transform: translateY(3px);
   box-shadow: 0 2px 0 #121721;
 }
 /*MAILCHECK SECTION RESPONSIVE END*/
+/**FOOTERSECTION RESPONSIVE */
+.inner-footer, .foot-top, .mobiles-logos, .foot-links, .web-foot {
+  flex-direction: row;
+}
+.inner-footer {
+  gap: 330px;
+}
+.foot-top {
+  gap: 55px;
+  & a {
+    width: 148px;
+    cursor: url(/assets/image/Pointer.svg), auto;
+  }
+}
+.foot-links a:hover {
+  color: var(--WarmRed);
+  cursor: url(/assets/image/Pointer.svg), auto;
+}
+.mobiles-logos {
+  display: none;
+}
+.web-foot {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  & img {
+    width: 32px;
+    height: 32px;
+    cursor: url(/assets/image/Pointer.svg), auto;
+  }
+}
 }
 
 
