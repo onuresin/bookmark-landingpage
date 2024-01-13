@@ -12,8 +12,6 @@
 
 }
 body {
-    margin: 0 auto;
-    max-width: 377px;
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
     background-color: #fff;
@@ -27,7 +25,7 @@ body {
     display: flex;
     align-items: end;
     justify-content: space-between;
-    padding: 40px 32px 0 32px;
+    padding: 40px 32px 15px 32px;
     position: sticky;
     top: 0;
     left: 0;
@@ -150,10 +148,9 @@ body {
   justify-content: end;
 }
 .screen-1 {
-  position: absolute;
-  top: 140px;
-  right: 32px;
-  left: 2px;
+  position: relative;
+  left: 290px;
+  bottom: 20px;
 }
 .bot-manager {
   display: flex;
@@ -598,3 +595,59 @@ body {
   }
 }
 /*footer end*/
+
+/***********************************************************************************************************************************/
+/**********************************************************************************************************************************/
+/**RESPONSIVE**/
+@media (min-width:1440px) {
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  /*HEADER SECTION RESPONSIVE*/
+  .hamburger {
+    display: none;
+  }
+  .header {
+    width: 1104px;
+    margin: 0 auto;
+  }
+  .header-links {
+    display: block;
+    display: flex;
+    gap: 44px;
+  }
+  .h-links {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    & a {
+      color: var(--DarkBlue);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 17px; /* 130.769% */
+      letter-spacing: 1.5px; 
+    }
+  }
+  /*Buton stillendirmesi*/
+  .log-In {
+    background-color: var(--WarmRed);
+    padding: 12px 32px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px -4px var(--DarkBlue);
+    transition: all .1s linear;
+    & a {
+      color: #fff;
+      text-decoration: none;
+  }
+}
+.log-In:hover {
+  box-shadow: linear-gradient(var(--y), #121721, #242A45, #5964e0);
+}
+.log-In:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #121721;
+}
+/*HEADER SECTION END*/
+}
