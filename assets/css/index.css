@@ -17,6 +17,7 @@ body {
     background-color: #fff;
 }
 .container {
+    width: 377px;
     margin: 0 auto;
 }
 .header {
@@ -146,6 +147,9 @@ body {
 .top-manager {
   display: flex;
   justify-content: end;
+}
+.screen-3, .screen-4 {
+  display: none;
 }
 .screen-1 {
   position: relative;
@@ -663,21 +667,50 @@ body {
 .manager-section {
   flex-direction: row;
   flex-direction: row-reverse;
+  margin-top: 150px;
 }
 .bot-manager {
   width: 540px;
   justify-content: start;
   align-items: start;
+  padding: 0;
+  margin-right: -42px;
   & p, h4 {
     text-align: start;
   }
 }
 .bot-manager-buttons {
- padding-inline: 0;
+ padding-inline: 0px;
  gap: 16px;
- 
+}
+.top-manager {
+  width: 726px;
 }
 .bot-manager-buttons button:hover {
   cursor: url(/assets/image/Pointer.svg), auto;
+}
+.chrome-btn:hover {
+  background-color: #fff;
+  border:2px solid var(--Purple);
+  color: var(--Purple);
+}
+.chrome-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 var(--Purple);
+}
+.firefox-btn:hover {
+  border: 2px solid #5B6074;
+  color: #5B6074;
+}
+.firefox-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #5B6074;
+}
+.screen-1,.screen-2 {display: none;}
+.screen-3, .screen-4 {display: block;}
+.screen-3 {
+  position: relative;
+  left: 470px;
+  bottom: 80px;
 }
 }
