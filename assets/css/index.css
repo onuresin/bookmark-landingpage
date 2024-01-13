@@ -740,7 +740,7 @@ body {
   }
 }
 /*FEATURES SECTION RESPONSIVE END*/
-/*SLIDER SECTION**/
+/*SLIDER SECTION RESPONSIVE**/
 .slider-links {
  width: 740px;
  justify-content:space-between;
@@ -818,6 +818,102 @@ body {
 .web-spec2 {
   margin-top: -200px;
 }
+/*SLIDER SECTION RESPONSIVE END**/
+
+/*EXTENSION SECTION RESPONSIVE*/
+.extension-section {
+  margin-top: 179px;
+  gap: 48px;
+  padding: 0;
+}
+.extension-text {
+  width: 540px;
+  margin: 0 auto;
+  & h4 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 52px; /* 162.5% */
+    letter-spacing: -0.1px; 
+  }
+  & p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */ 
+  }
+}
+.extension-cards {
+  width: 911px;
+  margin: 0 auto;
+  flex-direction: row;
+  gap: 34px;
+}
+.chrome {
+  max-height: 371px;
+  transition: 0.5s linear;
+}
+.firefoxy {
+  margin-top: 40px;
+  max-height: 371px;
+  transition: 0.5s linear;
+}
+.opera {
+  margin-top: 80px;
+  transition: 0.5s linear;
+}
+.chrome:hover {
+  background: linear-gradient(to right, #FFD464,#e16b5a,#4285F4, #74B340 );
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(-50px);
+  box-shadow: 10px 5px 5px #4286f498;
+  & h4, p {
+    color: #fff;
+    opacity: 1;
+  }
+}
+.firefoxy:hover {
+  background: linear-gradient(to right, #6160d9,#fe3a50,#fedc43 );
+  transform: translateY(-90px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(-90px);
+  box-shadow: 10px 5px 5px #ff9900a4;
+  & h4, p {
+    color: #fff;
+    opacity: 1;
+  }
+}
+.opera:hover:hover {
+  background: linear-gradient(to right,#eb6060,#e63e3e,#a8aaac,#080808);
+  transform: translateY(-130px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 10px 0px 5px #e63e3e85;
+  & h4, p {
+    color: #fff;
+    opacity: 1;
+  }
+}
+.chr-btn, .ff-btn, .opr-btn {
+  cursor: url(/assets/image/Pointer.svg), auto;
+}
+.chr-btn:hover {
+  background:linear-gradient(to left, #FFD464,#e16b5a,#4285F4, #74B340 );
+  transition: transform 0.9s, box-shadow 0.2 ease;
+  box-shadow: 0 0 10px #fff;
+}
+.chr-btn:active, .ff-btn:active, .opr-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 2px #fff ;
+}
+.ff-btn:hover {
+  background:linear-gradient(to left, #6160d9,#fe3a50,#fedc43 );
+  transition: transform 0.9s, box-shadow 0.2 ease;
+  box-shadow: 0 0 10px #fff;
+}
+.opr-btn:hover {
+  background: linear-gradient(to left,#a8aaac,#080808);
+  transition: transform 0.9s, box-shadow 0.2 ease;
+  box-shadow: 0 0 10px #fff;
+}
+/*EXTENSION SECTION RESPONSIVE END*/
 }
 
 
