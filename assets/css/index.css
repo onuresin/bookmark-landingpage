@@ -914,6 +914,43 @@ body {
   box-shadow: 0 0 10px #fff;
 }
 /*EXTENSION SECTION RESPONSIVE END*/
+/*FAQ SECTION RESPONSIVE */
+.info-sec, .accordion-section {
+  width: 540px;
+  margin: 0 auto;
+}
+.info-sec {
+  & h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 52px; /* 162.5% */
+    letter-spacing: -0.1px; 
+  }
+  & p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */ 
+  }
+}
+.accordion-section {
+  cursor: url(/assets/image/Pointer.svg) ,auto;
+}
+.question h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */ 
+}
+.question h4:hover {
+  color: var(--WarmRed);
+}
+.answer h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px; /* 225% */
+  letter-spacing: 0.15px; 
+}
+/*FAQ SECTION RESPONSIVE END*/
+
 }
 
 
