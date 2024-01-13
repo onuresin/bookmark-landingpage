@@ -617,6 +617,10 @@ body {
     display: flex;
     gap: 44px;
   }
+  .header-links a:hover{
+    color: var(--WarmRed);
+    cursor: url(/assets/image/Pointer.svg), auto;
+  }
   .h-links {
     display: flex;
     align-items: center;
@@ -637,17 +641,43 @@ body {
     border-radius: 5px;
     box-shadow: 0px 8px 8px -4px var(--DarkBlue);
     transition: all .1s linear;
-    & a {
-      color: #fff;
-      text-decoration: none;
-  }
+    cursor: url(/assets/image/Pointer.svg), auto;
+    color: #fff;
 }
 .log-In:hover {
   box-shadow: linear-gradient(var(--y), #121721, #242A45, #5964e0);
+  background-color: #fff;
+  border: 1px solid var(--WarmRed);
+  transition:ease-out 2.5;
+  color: var(--WarmRed);
+
 }
+
 .log-In:active {
   transform: translateY(3px);
   box-shadow: 0 2px 0 #121721;
 }
 /*HEADER SECTION END*/
+
+/*MANAGER SECTION RESPONSIVE*/
+.manager-section {
+  flex-direction: row;
+  flex-direction: row-reverse;
+}
+.bot-manager {
+  width: 540px;
+  justify-content: start;
+  align-items: start;
+  & p, h4 {
+    text-align: start;
+  }
+}
+.bot-manager-buttons {
+ padding-inline: 0;
+ gap: 16px;
+ 
+}
+.bot-manager-buttons button:hover {
+  cursor: url(/assets/image/Pointer.svg), auto;
+}
 }
