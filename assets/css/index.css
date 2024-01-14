@@ -765,12 +765,12 @@ body {
   opacity: 1;
 }
 .red-stck {
-  width: 180px;
+  width: 243px;
   margin-left: 0;
   padding-top: 27px;
   opacity: 1;
 }
-.web-spec1, .web-spec2 {
+.web-spec1, .web-spec2, .speedy, .speedy2, .easyw, .easyw2 {
   display: block;
 }
 .simple-mobil {
@@ -814,13 +814,29 @@ body {
   }
 }
 .web-spec1 {
-  width: 530px;
   position: relative;
   left: 165px;
 }
 .web-spec2 {
   margin-top: -200px;
 }
+.speedy {
+  position: relative;
+  left: 197px;
+}
+.speedy2 {
+  margin-top: -250px;
+}
+.easyw {
+  width: 468px;
+    position: relative;
+    left: 168px;
+  }
+.easyw2 {
+  margin-top: -250px;
+}
+
+
 /*SLIDER SECTION RESPONSIVE END**/
 
 /*EXTENSION SECTION RESPONSIVE*/
